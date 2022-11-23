@@ -172,6 +172,7 @@ p {
   width: 250px;
   border-radius: 200px;
   padding: auto;
+  object-fit: cover;
 }
 .headshot-container {
  
@@ -227,6 +228,7 @@ h1{
   margin-top: 25px;
   border-radius: 125px;
   height: 225px;
+  object-fit: cover;
 }
 hr {
   margin-left: 20px;
