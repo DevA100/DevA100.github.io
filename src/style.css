@@ -84,6 +84,7 @@ nav {
   width: 500px;
   justify-content: space-around;
   font-size: 30px;
+ margin: auto;
 }
 ul.show {
   display: flex;
