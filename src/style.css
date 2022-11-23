@@ -1,14 +1,72 @@
+
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
-section {
-  background-color: white;
+.hero{
+  /* background-color: #1c1d25; */
+  background-image: url(./img/twall.jpeg);
+  filter: 10%;
+border-radius: 20px 100px ;
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
-.hero {
-  background-color: #1c1d25;
-  height: 100vh;
-  color: white;
-  font-size: 40px;
+.container-card{
+  display: inline-flex;
+}
+.flex-container{
+  display: flex;
+  flex-direction: column;
+ margin-left: 20px;
+  border-right: 5px solid white;
+  border-radius: 0px 20em 20em 0px;
+  width: 40%;
+  padding-top: 39px;
+}
+.txt2{
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(203, 190, 190);
+}
+.txt5{
+  color: #b3ffff;
+}
+strong{
+  color: #b3ffff;
+}
+.txt1{
+  margin: 0px;
+  padding: 0px;
+  color: #b3ffff;
+  transition-property:font-size;
+  transition-duration: 4s;
+  transition-timing-function:ease;
+}
+.txt1:hover{
+font-size: xx-large;
+}
+.txt3{
+  color: #b3ffff;
+  margin: 0px;
+  padding: 0px;
+}
+#sec{
+  height: 650px;
+}
+.txt4{
+  margin: 0px;
+  padding: 0px;
+  color: rgb(203, 190, 190);
+}
+.ptxt{
+  color: rgb(203, 190, 190);
+}
+.pix{
+  opacity: 0.5;
+  margin-right: 250px;
+  margin-top: 30px;
 }
 footer {
   background-color: black;
@@ -18,9 +76,9 @@ footer {
 }
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
 }
-ul {
+.navul{
   display: flex;
   list-style-type: none;
   width: 500px;
@@ -28,12 +86,9 @@ ul {
   font-size: 30px;
 }
 ul.show {
-  display: block;
+  display: flex;
 }
-li {
-  /*width: 200px;*/
-  text-decoration: none;
-}
+
 h1 {
   font-size: 90px;
   margin: 0;
@@ -47,19 +102,11 @@ p {
   font-weight: 300;
 }
 .subtext {
+  
   font-size: 15px;
   font-weight: 300;
 }
-.hero-text {
-  margin-left: 80px;
-  margin-bottom: 200px;
-}
-.hero-area {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .button {
   width: 200px;
   height: 55px;
@@ -70,6 +117,7 @@ p {
   font-weight: 300;
   padding-top: 5px;
   margin-top: 20px;
+  margin-left: 50px;
 }
 .button:hover {
   background-color: #ef744b;
@@ -79,7 +127,8 @@ p {
   color: #808080;
 }
 .socials {
-  padding-bottom: 200px;
+  margin-top: 200px;
+ 
 }
 .logo {
   height: 120px;
@@ -88,10 +137,30 @@ p {
   margin: 10px;
 }
 .sub-section {
-  display: flex;
-  justify-content: space-around;
-  padding: 80px;
+ background-image: url(./img/2ndbg.jpeg);
+ 
+  height: 800px;
+  border-radius: 20px 100px ;
 }
+.hme{
+  margin-left: 500px;
+
+}
+.information{
+  display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   text-align: center;
+   margin: 10px;
+   perspective: 1000px;
+}
+
+.ex{
+  font-size: 16px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
 .sub-section-alternative {
   display: flex;
   flex-direction: column;
@@ -100,27 +169,57 @@ p {
 }
 .headshot {
   width: 250px;
-  border-radius: 150px;
+  border-radius: 200px;
+  padding: auto;
 }
 .headshot-container {
-  display: flex;
+ 
   align-items: center;
+  
 }
 .project-card {
-  width: 300px;
-  height: 500px;
-  box-shadow: 5px 5px 20px rgb(197, 195, 195);
-  margin: 10px;
+  width: 400px;
+  height: 450px;
+  box-shadow: 5px 5px 20px coral;
+  margin: auto;
 }
 .project-container {
   display: flex;
   justify-content: space-around;
 }
-@media only screen and (max-width: 1000px) {
-  .projects-container {
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
+  .project-container {
     display: flex;
     flex-wrap: wrap;
+
   }
+  .information{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .sub-section {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 2500px;
+  border-radius: 100px 20px ;
+   }
+.hme{
+  margin: auto;
+}
+
+
+
+
+}
+.hero-text {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+h1{
+  font-size: 3rem;
 }
 .project-image {
   width: 200px;
@@ -131,6 +230,7 @@ p {
 hr {
   margin-left: 20px;
   margin-right: 20px;
+  align-items: center;
 }
 .project-link {
   text-decoration: none;
@@ -146,31 +246,135 @@ a {
 .hamburger:focus {
   outline: 0;
 }
+.list{
+  list-style-type: none;
+}
+.li{
+  border: 5px solid rgb(203, 190, 190);
+}
+.contactme{
+  font-size: 12px;
+} 
+.copyright{
+  font-size: 10px;
+  margin-top: 100px;
+}
 
-@media only screen and (max-width: 1000px) {
+.flip-card{
+  border-radius: 50px;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  box-shadow: 5px 5px 20px coral;
+}
+.flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 50px;
+  box-shadow: 5px 5px 20px coral;
+}
+.flip-card-front {
+  
+  color: black;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+  border-radius: 50px;
+ 
+}
+@media only screen and (min-width: 300px)and (max-width: 1000px) {
+  .hero{
+    
+    background-image: url(./img/twall.jpeg);
+    filter: 20%;
+  border-radius: 100px 20px ;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
   .hamburger {
     display: block;
     border: 0;
     background-color: transparent;
     color: white;
-    font-size: 30px;
+    font-size: 15px;
     margin: 20px;
     align-self: flex-end;
   }
-  ul {
+  .navul {
     display: none;
-    background-color: #2b2c3b;
     margin: 0ppx;
+    font-size: medium;
   }
-  ul.show {
+  .navul.show {
     display: block;
+    margin-top: -40px;
   }
   nav {
     display: flex;
     flex-direction: column-reverse;
-    background-color: #2b2c3b;
+  }
+  .pix{
+    display: none;
   }
   .logo {
     display: none;
   }
+  .container-card{
+  display: block;
+}
+  .flex-container{
+    display: flex;
+
+   margin-left: 10px;
+    border-right: none;
+    border-radius: none;
+    width: 100%;
+    padding-bottom: 200px;
+    
+  }
+.txt5{
+  font-size: small;
+}
+  .socials {
+    margin-top: -195px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 95px;
+    height: 20px;
+    width: 20px;
+  }
+  svg{
+    height: 15px;
+    width: 15px;
+  }
+  .button{
+    height: 45px;
+    width: 150px;
+    margin-bottom: -5px;
+  }
+.ptxt{
+  margin-right: 8px;
+}
+
+
+
+
+
+
 }
