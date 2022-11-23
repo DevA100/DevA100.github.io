@@ -120,6 +120,12 @@ p {
   margin-top: 20px;
   margin-left: 50px;
 }
+.buttoncv{
+  margin-left:100px;
+  display: block;
+  margin-top: 25px;
+  
+}
 .button:hover {
   background-color: #ef744b;
 }
