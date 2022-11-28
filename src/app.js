@@ -14,7 +14,7 @@ hamburgerbutton.addEventListener('click', togglebutton)
 
 const checkbox = document.getElementById('checkbox');
 
-checkbox.addEventListener('change',()=>{document.body.classList.toggle('dark');});
+checkbox.addEventListener('change',()=>{document.body.classList.toggle('white');});
 checkbox.addEventListener('change',()=>{
     document.getElementById('KnowMe'). classList.toggle('bgblack');
     document.getElementById('KnowMe'). classList.toggle('bgwhite');

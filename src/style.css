@@ -2,8 +2,8 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-
 }
+
 .splash{
   position: fixed;
   top: 0;
@@ -42,8 +42,12 @@ body {
   animation: fadeIn 1s ease-in forwards;
 }
 body.dark{
-  background-color: #292c35;
+  background-color: #111;
   color: #fff;
+}
+body.white{
+  background-color: #fff;
+  color: #111;
 }
 *{
   box-sizing: border-box;
@@ -304,6 +308,10 @@ p {
   justify-content: space-around;
 }
 @media only screen and (min-width: 300px) and (max-width: 1000px) {
+  body{
+    overflow-x: hidden;
+
+  }
   .splash{
   z-index: 100;
   text-align: center;
@@ -332,7 +340,8 @@ p {
     justify-content: space-around;
   }
   .sub-section {
-   
+    overflow-x: hidden;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
