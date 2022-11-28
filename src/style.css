@@ -2,10 +2,103 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+
 }
-.hero{
-  /* background-color: #1c1d25; */
+.splash{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+  z-index: 200;
+  text-align: center;
+  line-height: 90vh;
+  
+}
+.splash.display-none{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+  z-index: -10;
+  text-align: center;
+  line-height: 90vh;
+  transition:all 0.5s ;
+}
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+  }
+}
+.fade-in{
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+body.dark{
+  background-color: #292c35;
+  color: #fff;
+}
+*{
+  box-sizing: border-box;
+}
+.label{
+  height: 26px;
+  width: 50px;
+  background-color: #111;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  border-radius: 50px;
+  padding: 5px;
+  position: relative;
+  margin-bottom: 3px;
+}
+.fa-moon{
+color: #f1c40f;
+}
+.fa-sun{
+  color: #f39c12;
+}
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+.checkbox:checked + .label .ball{
+  transform: translatex(24px);
+
+}
+.ball{
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+  
+}
+.bgblack{
+  background-image: url(./img/dark2ndbg.png);
+  color: #fff;
+}
+.bgwhite{
+  background-image: url(./img/2ndbg.jpeg);
+ color: #111;
+}
+.bgblue{
   background-image: url(./img/twall.jpeg);
+}
+
+.hero{
+  
+  /* background-image: url(./img/twall.jpeg); */
   filter: 10%;
 border-radius: 20px 100px ;
   background-repeat: no-repeat;
@@ -85,7 +178,9 @@ nav {
   justify-content: space-around;
   font-size: 30px;
  margin: auto;
+ padding: auto;
 }
+
 ul.show {
   display: flex;
 }
@@ -107,7 +202,10 @@ p {
   font-size: 15px;
   font-weight: 300;
 }
+.hme{
+  margin-left: 500px;
 
+}
 .button {
   width: 150px;
   height: 55px;
@@ -132,7 +230,7 @@ p {
  padding: 0px;
  background-color: #6cacac;
  padding-top: 12px;
- height: 42px;
+ height: 55px;
 }
 
 .button:hover {
@@ -153,15 +251,18 @@ p {
   margin: 10px;
 }
 .sub-section {
- background-image: url(./img/2ndbg.jpeg);
+ /* background-image: url(./img/2ndbg.jpeg); */
  
   height: 800px;
   border-radius: 20px 100px ;
 }
-.hme{
-  margin-left: 500px;
-
+.knowme{
+  /* background-image: url(./img/dark2ndbg.png); */
+  color: #fff;
+  height: 800px;
+  border-radius: 20px 100px ;
 }
+
 .information{
   display: flex;
    justify-content: space-around;
@@ -186,8 +287,9 @@ p {
 .headshot {
   width: 250px;
   border-radius: 200px;
-  padding: auto;
+  margin-left: 500px;
   object-fit: cover;
+  margin-bottom: 37px;
 }
 .headshot-container {
  
@@ -197,8 +299,8 @@ p {
 .project-card {
   width: 400px;
   height: 450px;
-  box-shadow: 5px 5px 20px coral;
-  margin: auto;
+  box-shadow: 5px 5px 20px rgb(139, 113, 104);
+  margin: 10px;
 }
 .project-container {
   display: flex;
@@ -208,18 +310,26 @@ p {
   .project-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+  }
+  .project-card {
+    width: 400px;
+    height: 450px;
+    margin: 30px;
   }
   .information{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 30px;
+    justify-content: space-around;
   }
   .sub-section {
    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 2500px;
+    height: 2800px;
   border-radius: 100px 20px ;
    }
 .hme{
@@ -297,9 +407,9 @@ a {
 .flip-card{
   border-radius: 50px;
   width: 300px;
-  height: 400px;
+  height: 360px;
   perspective: 1000px;
-  box-shadow: 5px 5px 20px coral;
+  box-shadow: 5px 5px 20px rgb(69, 47, 39);
 }
 .flip-card-inner{
   position: relative;
@@ -320,7 +430,7 @@ a {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 50px;
-  box-shadow: 5px 5px 20px coral;
+  box-shadow: 5px 5px 20px rgb(211, 250, 250);
 }
 .flip-card-front {
   
@@ -329,12 +439,15 @@ a {
 .flip-card-back {
   transform: rotateY(180deg);
   border-radius: 50px;
- 
+
+}
+.bgblack .flip-card-front{
+  color: #fff;
 }
 @media only screen and (min-width: 300px)and (max-width: 1000px) {
   .hero{
     
-    background-image: url(./img/twall.jpeg);
+  
     filter: 20%;
   border-radius: 100px 20px ;
     background-repeat: no-repeat;
@@ -386,12 +499,14 @@ a {
   font-size: small;
 }
   .socials {
-    margin-top: -195px;
+     margin-top: -195px;
     display: flex;
     flex-direction: row;
     margin-left: 122px;
     height: 20px;
     width: 20px;
+    -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   }
   svg{
     height: 15px;

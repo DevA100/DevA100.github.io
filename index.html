@@ -12,17 +12,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevA Portfolio </title>
+
+    
 </head>
 
 <body>
+<div class="splash">
+<h1 class="fade-in">Welcome to DevA page!</h1>
+</div>
 
-    <section class="hero" id="sec">
+
+
+<div>
+<input type="checkbox" class="checkbox" id="checkbox" onclick="bgChanger()">
+<label for="checkbox" class="label">
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
+    <div class="ball"></div>
+</label>
+
+</div>
+    <section class="hero bgblue" id="sec">
             <nav>
             <img class="logo" src="src/img/logo.png" alt="Angel's logo" />
             <ul class="navul" id="nav-list">
-                <li><a href="#Know Me"> Know Me</a></li>
-                <li><a href="#project"> Project</a></li>
-                <li><a href="#contact-me"> Contact me</a> </li>
+                <li class="know"><a href="#Know Me"> Know Me</a></li>
+                <li class="project"><a href="#project"> Project</a></li>
+                <li class="contact"><a href="#contact-me"> Contact me</a> </li>
             </ul>
             <button class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
@@ -74,12 +90,13 @@
         </div>
     </section>
 
-    <section class="sub-section" id="Know Me"> 
+    <section class="sub-section bgwhite" id="KnowMe"> 
         <div class="hme">
         <h2 class="me">Know me</h2>
-        <div class="headshot-container">
-            <img class="headshot" src="src/img/headshot.jpg" height="250px"  alt="Jacob Angel headshot">
-        </div>
+        
+    </div>
+    <div class="headshot-container">
+        <img class="headshot" src="src/img/headshot.jpg" height="250px"  alt="Jacob Angel headshot">
     </div>
         <div class="information">
             <div class="flip-card" id="fflip">
@@ -171,8 +188,8 @@
         <div class="project-container">
             <div class="project-card">
                 <img class="project-image" src="src/img/project1.png" alt="project one image">
-                <h3 style="color:black ;">bulb work</h3>
-                <p class="subtext" style="color:black ;">  My javascript bulb project . just a casual work </p>
+                <h3 >bulb work</h3>
+                <p class="subtext" >  My javascript bulb project . just a casual work </p>
                 <hr />
                 <p class="subtext"><a class="project-link" href="https:/www.github.com/DevA100">View here</a> </p>
             </div>
