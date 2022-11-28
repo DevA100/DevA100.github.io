@@ -308,20 +308,12 @@ p {
   justify-content: space-around;
 }
 @media only screen and (min-width: 300px) and (max-width: 1000px) {
-  body{
-    overflow-x: hidden;
-
-  }
   .splash{
-  z-index: 100;
-  text-align: center;
-  line-height: 1;
-    height: 50%;
-    width: 50%;
-    word-wrap: break-word;
-
+    z-index: 1;
+    line-height: 10vh;
+    
   }
- 
+  
   .project-container {
     display: flex;
     flex-wrap: wrap;
