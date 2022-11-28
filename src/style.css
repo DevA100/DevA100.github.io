@@ -17,6 +17,7 @@ body {
   line-height: 90vh;
   
 }
+
 .splash.display-none{
   position: fixed;
   opacity: 0;
@@ -291,11 +292,7 @@ p {
   object-fit: cover;
   margin-bottom: 37px;
 }
-.headshot-container {
- 
-  align-items: center;
-  
-}
+
 .project-card {
   width: 400px;
   height: 450px;
@@ -307,6 +304,16 @@ p {
   justify-content: space-around;
 }
 @media only screen and (min-width: 300px) and (max-width: 1000px) {
+  .splash{
+  z-index: 100;
+  text-align: center;
+  line-height: 1;
+    height: 50%;
+    width: 50%;
+    word-wrap: break-word;
+
+  }
+ 
   .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -321,7 +328,7 @@ p {
   .information{
     display: flex;
     flex-wrap: wrap;
-    margin: 30px;
+   margin-top: -500px; 
     justify-content: space-around;
   }
   .sub-section {
@@ -329,11 +336,12 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 2800px;
+    height: 2700px;
   border-radius: 100px 20px ;
    }
 .hme{
   margin: auto;
+padding-bottom: 10px;
 }
 
 #buttoncv{
@@ -355,7 +363,14 @@ p {
   margin-right: 50px;
   padding-top: 12px;
 }
-
+.headshot{
+  margin-right: 500px;
+  margin-bottom: 480px;
+ 
+}
+.me{
+  padding-top: 100px;
+}
 }
 .hero-text {
   margin: 0 auto;
@@ -520,7 +535,10 @@ a {
 .ptxt{
   margin-right: 8px;
 }
-
+.flip-card{
+  height: 400px;
+  margin: 20px;
+}
 
 
 
