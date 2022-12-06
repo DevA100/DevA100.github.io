@@ -219,10 +219,10 @@ p {
   text-align: center;
   font-size: 30px;
   font-weight: 300;
- font-size: 30px;
+ font-size: 22px;
   margin-top: 30px;
   margin-right: 50px;
-
+  padding-top: 12px;
 }
 
 .bt{
