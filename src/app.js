@@ -20,6 +20,8 @@ checkbox.addEventListener('change',()=>{
     document.getElementById('KnowMe'). classList.toggle('bgwhite');
     document.getElementById('sec'). classList.toggle('bgblue');
     document.getElementById('sec'). classList.toggle('bgblack');
+    document.getElementById("project").classList.toggle('bgwhite');
+    document.getElementById("project").classList.toggle('bgblack');
 });
   
  const splash = document.querySelector('.splash');

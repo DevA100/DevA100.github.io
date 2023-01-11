@@ -383,11 +383,12 @@ h1{
   font-size: 3rem;
 }
 .project-image {
+  object-fit: cover;
   width: 200px;
   margin-top: 25px;
   border-radius: 125px;
-  height: 225px;
-  object-fit: cover;
+  height: 210px;
+  
 }
 hr {
   margin-left: 20px;
