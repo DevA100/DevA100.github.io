@@ -190,7 +190,7 @@ nav {
   transition: all 0.3s;
 }
 
-/* Hero Section - FIXED FOR MOBILE */
+/* Hero Section */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -893,7 +893,7 @@ body.light-mode .project-card:hover .project-arrow svg { stroke: #fff; }
 body.light-mode .social-link svg { fill: #4a5568; }
 body.light-mode .social-link:hover svg { fill: #0066cc; }
 
-/* ===== RESPONSIVE DESIGN - FIXED FOR MOBILE ===== */
+/* ===== RESPONSIVE DESIGN - FIXED HERO PADDING ===== */
 @media (max-width: 768px) {
   /* Navigation */
   nav { 
@@ -922,16 +922,18 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
     display: block; 
   }
   
-  /* Hero Section - Mobile Fix */
+  /* Hero Section - Same padding as other sections */
   #hero {
     padding: 100px 24px 60px;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
   }
   
   .hero-content {
     max-width: 100%;
     width: 100%;
+    padding: 0;
   }
   
   .hero-name {
@@ -952,6 +954,7 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
     justify-content: flex-start;
     gap: 32px;
     flex-wrap: wrap;
+    padding: 0;
   }
   
   .stat-item {
@@ -962,7 +965,7 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
     font-size: 2rem;
   }
   
-  /* Sections */
+  /* All sections - consistent padding */
   section {
     padding: 60px 24px;
   }
@@ -1043,7 +1046,7 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
     padding: 24px;
   }
   
-  /* Theme Toggle - Adjust position for mobile */
+  /* Theme Toggle */
   .theme-toggle {
     bottom: 16px;
     right: 16px;
@@ -1067,6 +1070,14 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
 @media (max-width: 480px) {
   #hero {
     padding: 90px 20px 50px;
+  }
+  
+  section {
+    padding: 50px 20px;
+  }
+  
+  nav {
+    padding: 15px 20px;
   }
   
   .hero-eyebrow {
@@ -1100,10 +1111,6 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
   
   .stat-label {
     font-size: 0.65rem;
-  }
-  
-  section {
-    padding: 50px 20px;
   }
   
   .contact-email {
@@ -1148,5 +1155,9 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
   
   .projects-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  nav {
+    padding: 18px 40px;
   }
 }
