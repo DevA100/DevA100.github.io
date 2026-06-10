@@ -12,17 +12,20 @@
 </head>
 <body>
 
+<!-- Theme Toggle Button -->
+<div class="theme-toggle" id="themeToggle" title="Switch to Light Mode">🌙</div>
+
 <!-- Cursor -->
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursor-ring"></div>
 
-<!-- Splash -->
+<!-- Splash Screen -->
 <div id="splash">
   <div class="splash-logo">Dev<span>A</span></div>
   <div class="splash-bar"><div class="splash-bar-fill"></div></div>
 </div>
 
-<!-- Nav -->
+<!-- Navigation -->
 <nav id="navbar">
   <div class="nav-logo">Dev<span>A</span></div>
   <ul class="nav-links" id="nav-links">
@@ -37,26 +40,25 @@
   </button>
 </nav>
 
-<!-- Hero -->
+<!-- Hero Section -->
 <section id="hero">
   <div class="hero-grid-bg"></div>
   <div class="hero-glow"></div>
   <div class="hero-glow2"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Software Engineer:
-.NET | Python | FastAPI | React </div>
+    <div class="hero-eyebrow">Software Engineer: .NET | Python | FastAPI | React</div>
     <h1 class="hero-name">Jacob<br>Chidimma<br><span class="accent">Angel.</span></h1>
     <p class="hero-title">Building Software That Solves Real Business Problems</p>
     <p class="hero-desc">
-Software Engineer with 5+ years of experience designing and building enterprise applications, APIs, and digital products across banking, fintech, and business environments.
-
-Experienced in .NET, C#, Python, FastAPI, React, SQL Server, PostgreSQL, and cloud-based deployments. Passionate about building reliable systems, automating business processes, and exploring AI-powered solutions that improve efficiency and decision-making.
-
-Known for strong problem-solving ability, leadership, adaptability, and delivering solutions that create measurable business value.
+      Software Engineer with 5+ years of experience designing and building enterprise applications, APIs, and digital products across banking, fintech, and business environments.
+      <br><br>
+      Experienced in .NET, C#, Python, FastAPI, React, SQL Server, PostgreSQL, and cloud-based deployments. Passionate about building reliable systems, automating business processes, and exploring AI-powered solutions that improve efficiency and decision-making.
+      <br><br>
+      Known for strong problem-solving ability, leadership, adaptability, and delivering solutions that create measurable business value.
     </p>
     <div class="hero-actions">
       <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="https://drive.google.com/file/d/1wd2W4vDNldOuRKgKe5jRfr08oRMA_PUW/view?usp=sharing" target="_blank" class="btn-secondary">Download CV</a>
+      <a href="#" class="btn-secondary" id="downloadCV">Download CV</a>
     </div>
   </div>
   <div class="hero-stats">
@@ -75,13 +77,13 @@ Known for strong problem-solving ability, leadership, adaptability, and deliveri
   </div>
 </section>
 
-<!-- About -->
+<!-- About Section -->
 <section id="about">
   <div class="about-grid">
     <div class="about-image-wrap reveal">
       <div class="about-image-frame">
-        <img src="src/img/ppix.jpeg" alt="Jacob Chidimma Angel"
-          onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#111118,#18181f)'" />
+        <img src="src/img/ppix.jpeg" alt="Jacob Chidimma Angel" 
+          onerror="this.src='https://via.placeholder.com/400x500/111118/00e5c8?text=Jacob+Angel'; this.onerror=null;" />
       </div>
     </div>
     <div class="about-text reveal">
@@ -91,7 +93,7 @@ Known for strong problem-solving ability, leadership, adaptability, and deliveri
         I'm a Software Engineer with a strong background in enterprise application development, backend systems, API design, and full-stack web development.
       </p>
       <p>
-Over the years, I've worked across banking, fintech, and technology-driven environments, building secure and scalable software using .NET, C#, React, Python, and SQL technologies.
+        Over the years, I've worked across banking, fintech, and technology-driven environments, building secure and scalable software using .NET, C#, React, Python, and SQL technologies.
       </p>
       <p>
         My experience extends beyond development into cloud infrastructure, DevOps practices, application deployment, and system support, giving me a practical understanding of how software performs in real production environments.
@@ -108,7 +110,7 @@ Over the years, I've worked across banking, fintech, and technology-driven envir
   </div>
 </section>
 
-<!-- Skills -->
+<!-- Skills Section -->
 <section id="skills">
   <div class="section-label reveal">Technical Skills</div>
   <h2 class="section-title reveal">What I work with</h2>
@@ -164,7 +166,7 @@ Over the years, I've worked across banking, fintech, and technology-driven envir
     </div>
     <div class="skill-card reveal">
       <div class="skill-icon">🎓</div>
-      <h3>AI & &amp;Intelligent Automation</h3>
+      <h3>AI &amp; Intelligent Automation</h3>
       <p>Exploring artificial intelligent and automation for fast moving and secure processes.</p>
       <div class="skill-pills">
         <span class="pill">Workflow Automation</span><span class="pill">Prompt Engineering</span>
@@ -175,14 +177,12 @@ Over the years, I've worked across banking, fintech, and technology-driven envir
   </div>
 </section>
 
-<!-- Projects -->
+<!-- Projects Section -->
 <section id="projects">
   <div class="section-label reveal">Portfolio</div>
   <h2 class="section-title reveal">Projects</h2>
   <p class="section-sub reveal">Real-world solutions built to solve business problems, automate processes, and improve user experiences.</p>
   <div class="projects-grid">
-
-    <!-- NEW 1: BeProductive FastAPI App -->
     <div class="project-card reveal">
       <div class="project-header">
         <span class="project-lang"><span class="project-lang-dot lang-csharp"></span>FastAPI / Python</span>
@@ -208,7 +208,6 @@ Over the years, I've worked across banking, fintech, and technology-driven envir
       </div>
     </div>
 
-    <!-- NEW 2: Multi-Agent AI Framework -->
     <div class="project-card reveal">
       <div class="project-header">
         <span class="project-lang"><span class="project-lang-dot lang-csharp"></span>LangGraph / CrewAI</span>
@@ -220,9 +219,7 @@ Over the years, I've worked across banking, fintech, and technology-driven envir
       </div>
       <div class="project-body">
         <h3>Multi-Agent AI Framework</h3>
-        <p>Multi-Agent AI Framework for Automated Banking Data Migration
-
-An intelligent agent-based framework designed to automate data migration, validation, reconciliation, and integrity assurance across heterogeneous core banking systems using LangGraph, CrewAI, Python, and Pandas.</p>
+        <p>Multi-Agent AI Framework for Automated Banking Data Migration. An intelligent agent-based framework designed to automate data migration, validation, reconciliation, and integrity assurance across heterogeneous core banking systems using LangGraph, CrewAI, Python, and Pandas.</p>
         <div class="project-footer">
           <span class="project-updated">In Progress · MIT Project</span>
           <a href="https://github.com/DevA100/MultiAgent-Banking-Migration" target="_blank" class="project-arrow">
@@ -232,7 +229,6 @@ An intelligent agent-based framework designed to automate data migration, valida
       </div>
     </div>
 
-    <!-- EXISTING 1: Monitoring Dashboard -->
     <div class="project-card reveal">
       <div class="project-header">
         <span class="project-lang"><span class="project-lang-dot lang-csharp"></span>C#</span>
@@ -254,7 +250,6 @@ An intelligent agent-based framework designed to automate data migration, valida
       </div>
     </div>
 
-    <!-- EXISTING 2: Transactions Webhook Service -->
     <div class="project-card reveal">
       <div class="project-header">
         <span class="project-lang"><span class="project-lang-dot lang-csharp"></span>C#</span>
@@ -276,7 +271,6 @@ An intelligent agent-based framework designed to automate data migration, valida
       </div>
     </div>
 
-    <!-- EXISTING 3: Customer Management Portal -->
     <div class="project-card reveal">
       <div class="project-header">
         <span class="project-lang"><span class="project-lang-dot lang-html"></span>HTML</span>
@@ -298,7 +292,6 @@ An intelligent agent-based framework designed to automate data migration, valida
       </div>
     </div>
 
-    <!-- EXISTING 4: Property Sales Tracker -->
     <div class="project-card reveal">
       <div class="project-header">
         <span class="project-lang"><span class="project-lang-dot lang-csharp"></span>C#</span>
@@ -320,7 +313,6 @@ An intelligent agent-based framework designed to automate data migration, valida
       </div>
     </div>
 
-    <!-- EXISTING 5: Performance Management Frontend -->
     <div class="project-card reveal">
       <div class="project-header">
         <span class="project-lang"><span class="project-lang-dot lang-js"></span>JavaScript</span>
@@ -342,7 +334,6 @@ An intelligent agent-based framework designed to automate data migration, valida
       </div>
     </div>
 
-    <!-- EXISTING 6: Secure Transaction OTP Service -->
     <div class="project-card reveal">
       <div class="project-header">
         <span class="project-lang"><span class="project-lang-dot lang-csharp"></span>C#</span>
@@ -363,78 +354,66 @@ An intelligent agent-based framework designed to automate data migration, valida
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- Experience -->
+<!-- Experience Section -->
 <section id="experience">
   <div class="section-label reveal">Career</div>
   <h2 class="section-title reveal">Experience &amp; Education</h2>
   <p class="section-sub reveal">5+ years of building enterprise software across banking, fintech, and product companies.</p>
   <div class="exp-timeline">
-
-    <!-- Women in Tech + CDMWare (NEW) -->
     <div class="exp-item reveal">
       <div class="exp-dot"></div>
       <div class="exp-period">Present</div>
       <h3>Women in Tech Lead</h3>
       <div class="exp-company">Lagos Chapter · Tech Startup</div>
-      <p class="exp-desc">Leading a community of women in technology through mentorship, technical workshops, and career development initiatives.
-
-Founded CDMWare, a technology startup focused on building digital solutions and process automation tools for businesses and organizations.</p>
+      <p class="exp-desc">Leading a community of women in technology through mentorship, technical workshops, and career development initiatives. Founded CDMWare, a technology startup focused on building digital solutions and process automation tools for businesses and organizations.</p>
     </div>
 
-    <!-- Jubilee-Life -->
     <div class="exp-item reveal">
       <div class="exp-dot"></div>
       <div class="exp-period">Sept 2023 — Present</div>
       <h3>Application Developer (.NET Core / C#)</h3>
       <div class="exp-company">Jubilee-Life Mortgage Bank — Lagos</div>
-      <p class="exp-desc">• Develop and maintain enterprise banking and internal business applications using .NET Core, Blazor, React, and SQL Server.
-• Design and implement secure REST APIs to improve operational efficiency and system integration.
-• Deploy and manage production applications on Azure and on-premise infrastructure.
-• Collaborate with business teams to deliver software solutions aligned with organizational goals.
-• Support code quality through reviews, documentation, and knowledge sharing.</p>
+      <p class="exp-desc">• Develop and maintain enterprise banking and internal business applications using .NET Core, Blazor, React, and SQL Server.<br>
+      • Design and implement secure REST APIs to improve operational efficiency and system integration.<br>
+      • Deploy and manage production applications on Azure and on-premise infrastructure.<br>
+      • Collaborate with business teams to deliver software solutions aligned with organizational goals.<br>
+      • Support code quality through reviews, documentation, and knowledge sharing.</p>
     </div>
 
-    <!-- Javaplus -->
     <div class="exp-item reveal">
       <div class="exp-dot"></div>
       <div class="exp-period">Oct 2022 — Jun 2023</div>
       <h3>.NET &amp; Frontend Developer</h3>
       <div class="exp-company">Javaplus Innovation — Lagos</div>
-      <p class="exp-desc">• Developed ASP.NET Core and Blazor applications with responsive and user-friendly interfaces.
-• Integrated frontend applications with backend APIs for real-time data processing.
-• Built and maintained WordPress solutions integrated with custom .NET services.
-• Improved application performance and maintainability through refactoring and optimization.</p>
+      <p class="exp-desc">• Developed ASP.NET Core and Blazor applications with responsive and user-friendly interfaces.<br>
+      • Integrated frontend applications with backend APIs for real-time data processing.<br>
+      • Built and maintained WordPress solutions integrated with custom .NET services.<br>
+      • Improved application performance and maintainability through refactoring and optimization.</p>
     </div>
 
-    <!-- AERA -->
     <div class="exp-item reveal">
       <div class="exp-dot"></div>
       <div class="exp-period">Aug 2021 — Sept 2022</div>
       <h3>.NET Support Developer / IT Systems Engineer</h3>
       <div class="exp-company">American Employee Recreation Association — Lagos</div>
-      <p class="exp-desc">• Supported the development and maintenance of internal .NET applications and APIs.
-• Managed IIS-hosted applications and monitored system performance.
-• Automated operational tasks using C# utilities and SQL scripts.
-• Performed API testing, troubleshooting, and database support activities.
-• Provided technical support for application and infrastructure-related issues.</p>
+      <p class="exp-desc">• Supported the development and maintenance of internal .NET applications and APIs.<br>
+      • Managed IIS-hosted applications and monitored system performance.<br>
+      • Automated operational tasks using C# utilities and SQL scripts.<br>
+      • Performed API testing, troubleshooting, and database support activities.<br>
+      • Provided technical support for application and infrastructure-related issues.</p>
     </div>
 
-    <!-- Education -->
-
-    <!-- miva -->
     <div class="exp-item reveal">
       <div class="exp-dot"></div>
       <div class="exp-period">2025 — 2026</div>
       <h3>Master of Information Technology (Software Engineering)</h3>
       <div class="exp-company">Miva Open University</div>
-      <p class="exp-desc">Advanced study in scalable system design, software architecture, distributed computing, Emerging technologies like AI, etc. Currently building a Multi-Agent AI Framework for Core Banking Data Migration using LangChain, LangGraph, CrewAI, and Python.
-
-</p>
+      <p class="exp-desc">Advanced study in scalable system design, software architecture, distributed computing, Emerging technologies like AI, etc. Currently building a Multi-Agent AI Framework for Core Banking Data Migration using LangChain, LangGraph, CrewAI, and Python.</p>
     </div>
+    
     <div class="exp-item reveal">
       <div class="exp-dot"></div>
       <div class="exp-period">2021</div>
@@ -443,7 +422,6 @@ Founded CDMWare, a technology startup focused on building digital solutions and 
       <p class="exp-desc">Completed intensive software engineering training programmes covering full-stack development, backend .NET development, and frontend engineering — forming the foundation of my professional software career.</p>
     </div>
 
-    <!-- UNN -->
     <div class="exp-item reveal">
       <div class="exp-dot"></div>
       <div class="exp-period">2016 — 2021</div>
@@ -451,11 +429,10 @@ Founded CDMWare, a technology startup focused on building digital solutions and 
       <div class="exp-company">University of Nigeria, Nsukka</div>
       <p class="exp-desc">Graduated with a degree in Integrated Science. Built strong foundations in analytical thinking, research methodology, and problem-solving that continue to inform my approach to software engineering.</p>
     </div>
-
   </div>
 </section>
 
-<!-- Contact -->
+<!-- Contact Section -->
 <section id="contact">
   <div class="contact-inner">
     <div class="section-label reveal" style="justify-content:center">Get In Touch</div>
