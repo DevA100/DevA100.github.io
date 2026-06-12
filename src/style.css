@@ -190,7 +190,7 @@ nav {
   transition: all 0.3s;
 }
 
-/* Hero Section */
+/* Hero Section - FIXED: added overflow: hidden to remove Y-axis scroll */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -198,7 +198,7 @@ nav {
   justify-content: space-between;
   padding: 120px 60px 80px;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .hero-grid-bg {
@@ -893,7 +893,7 @@ body.light-mode .project-card:hover .project-arrow svg { stroke: #fff; }
 body.light-mode .social-link svg { fill: #4a5568; }
 body.light-mode .social-link:hover svg { fill: #0066cc; }
 
-/* ===== RESPONSIVE DESIGN - FIXED HERO PADDING ===== */
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   /* Navigation */
   nav { 
@@ -922,12 +922,13 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
     display: block; 
   }
   
-  /* Hero Section - Same padding as other sections */
+  /* Hero Section - FIXED: added overflow: hidden */
   #hero {
     padding: 100px 24px 60px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    overflow: hidden;
   }
   
   .hero-content {
@@ -1070,6 +1071,7 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
 @media (max-width: 480px) {
   #hero {
     padding: 90px 20px 50px;
+    overflow: hidden;
   }
   
   section {
@@ -1133,6 +1135,7 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
 @media (min-width: 769px) and (max-width: 1024px) {
   #hero {
     padding: 100px 40px 60px;
+    overflow: hidden;
   }
   
   .hero-stats {
