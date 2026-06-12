@@ -190,7 +190,7 @@ nav {
   transition: all 0.3s;
 }
 
-/* Hero Section - FIXED: added overflow: hidden to remove Y-axis scroll */
+/* Hero Section - FIXED: overflow hidden removes vertical scroll */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -922,7 +922,7 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
     display: block; 
   }
   
-  /* Hero Section - FIXED: added overflow: hidden */
+  /* Hero Section - FIXED: added overflow hidden */
   #hero {
     padding: 100px 24px 60px;
     flex-direction: column;
