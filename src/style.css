@@ -18,13 +18,19 @@
   --font-body: 'DM Sans', sans-serif;
 }
 
-html { scroll-behavior: smooth; }
+html { 
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
 
 body {
   font-family: var(--font-body);
   background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
   line-height: 1.6;
 }
 
@@ -190,7 +196,7 @@ nav {
   transition: all 0.3s;
 }
 
-/* Hero Section - FIXED: overflow hidden removes vertical scroll */
+/* Hero Section - FIXED */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -199,6 +205,8 @@ nav {
   padding: 120px 60px 80px;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 .hero-grid-bg {
@@ -365,7 +373,11 @@ nav {
 }
 
 /* Section Base */
-section { padding: 100px 60px; }
+section { 
+  padding: 100px 60px;
+  overflow-x: hidden;
+  width: 100%;
+}
 
 .section-label {
   display: inline-flex;
@@ -922,13 +934,15 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
     display: block; 
   }
   
-  /* Hero Section - FIXED: added overflow hidden */
+  /* Hero Section - FIXED */
   #hero {
     padding: 100px 24px 60px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
   }
   
   .hero-content {
@@ -1072,6 +1086,8 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
   #hero {
     padding: 90px 20px 50px;
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
   }
   
   section {
@@ -1136,6 +1152,8 @@ body.light-mode .social-link:hover svg { fill: #0066cc; }
   #hero {
     padding: 100px 40px 60px;
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
   }
   
   .hero-stats {
